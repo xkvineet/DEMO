@@ -22,6 +22,6 @@ jobs:
           # git config --global user.email 'kanaparthi.vineetha@capgemini.com'
           git fetch                         # fetch branches
           git checkout PRD       # checkout to your branch
-          git pull origin main
+          git pull origin QA
           git diff-index --quiet HEAD ||  git commit -am "deploy files"
           git push origin PRD
